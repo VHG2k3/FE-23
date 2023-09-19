@@ -1,0 +1,22 @@
+.content{
+    position: relative;
+}
+.add-card{
+    opacity:0;
+    position:absolute;
+    top: -100px;
+    left:0;
+    width:100%;
+}
+.add-card button{
+    width:100%;
+    padding: 10px;
+}
+@keyframes showBtn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.content:hover .add-card{
+    animation: showBtn 1s;
+}

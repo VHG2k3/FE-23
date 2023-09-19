@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table và form</title>
+</head>
+<body>
+    <h1>Table:</h1>
+    <pre>
+        I: Mục tiêu:
+            - Cấu trúc 1 table;
+            - Biết cách tạo và triển khai table theo thiết kế;
+            + Biết cách sử dụng các thuộc tính tác động tới viền, khoảng cách, hàng, cột;
+
+    </pre>
+    <hr>
+
+    <table border="1">
+        <thead>
+            <!-- biểu diễn các tiêu đề cho nội dung của table -->
+            <tr>
+                <th>Dev_head_1_1</th>
+                <th>Dev_head_1_2</th>
+                <th>Dev_head_1_3</th>
+            </tr>
+
+            <!-- <tr>
+                <th>Dev_head_2_1</th>
+                <th>Dev_head_2_2</th>
+                <th>Dev_head_2_3</th>
+            </tr> -->
+        </thead>
+
+        <tbody>
+            <!-- Biểu diễn các nội dung của table -->
+            <tr>
+                <td colspan="3" rowspan="2">Dev_body_1_1</td> 
+                <td>Dev_body_1_2</td>
+                <td rowspan="2">Dev_body_1_3</td>
+            </tr>
+        
+            <tr>
+                <td>Dev_body_2_1</td>
+                <td>Dev_body_2_2</td>
+                <td>Dev_body_2_3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!-- Biểu diễn nội dung chú thích của table -->
+            <tr>
+
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+    <hr>
+    <h2>Ứng dụng các thuộc tính của table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Cột 1</th>
+                <th>Cột 2</th>
+                <th>Cột 3</th>
+                <th>Cột 4</th>
+                <th>Cột 5</th>
+                <th>Cột 6</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Cột 1</td>
+                <td>Cột 2</td>
+                <td>Cột 3</td>
+                <td>Cột 4</td>
+                <td>Cột 5</td>
+                <td>Cột 6</td>
+            </tr>
+            <tr>
+                <td>Cột 2</td>
+                <td>Cột 3</td>
+                <td>Cột 4</td>
+                <td>Cột 5</td>
+                <td>Cột 6</td>
+            </tr>
+            <tr>
+                <td colspan="5"> Cột 5</td>
+                <td>Cột 6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>Bài tập 2_01</h2>
+    <table border="2" cellpadding="20" cellspacing="5">
+        <thead>
+            <tr>
+                <th rowspan="2">STT</th>
+                <th rowspan="2">Họ Tên</th>
+                <th rowspan="2">Ngày sinh</th>
+                <th colspan="3">Điểm</th>
+            </tr>
+
+            <tr>
+                <th>Toán</th>
+                <th>Văn</th>
+                <th>Anh</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Văn Linh</td>
+                <td>01/05/1997</td>
+                <td>9</td>
+                <td>7</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>Bai2_02</h2>
+    <table border="1" width="1000" cellpadding="10" cellspacing="5">
+        <tbody>
+            <caption><h3>Thông tin chi tiết</h3></caption>
+            <tr>
+                <td rowspan="4" align="center">
+                    <a href="https://images.search.yahoo.com/search/images;_ylt=AwrOp1SsVedkH4EMt8FXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=blackpink+concert+vietnam&fr2=piv-web&type=E210US91215G0&fr=mcafee" title="Blackpink-concert-VN">
+                        <img src="../images/Blackpink.jpg" alt="Blackpink" width="400">
+                    </a>
+                </td>
+                <td colspan="4" align="center">
+                    Ngày sinh: 28/02/1997
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">Điểm thi</td>
+                <td rowspan="2" align="center">Điểm TB</td>
+            </tr>
+            <tr>
+                <td align="center">Toán</td>
+                <td align="center">Văn</td>
+                <td align="center">Anh</td>
+            </tr>
+            <tr>
+                <td align="center">9</td>
+                <td align="center">8</td>
+                <td align="center">7</td>
+                <td align="center">8</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

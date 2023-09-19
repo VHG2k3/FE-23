@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DEVMASTER FE</title>
+    </head>
+    <body>
+        <pre style="color:blue">
+            I: Giới thiệu FE
+            II: KHởi động với html 
+
+                1: Tạo file html 
+                    tên_file  . html : Lưu ý không -chứa kí tự đặc biệt
+                                                    - bắt đầu bằng số
+                                                    - hạn chế chứa dấu cách
+                2: Cấu trúc của 1 trang html 
+                    - 2 phần: head: chứa các thẻ meta, thẻ link, thẻ scripts(các thẻ nội dung nhúng vào trang web ) 
+                              body: hiển thị toàn bộ nội dung bằng mắt nhìn của người dùng thông qua các element
+                                    Cũng có thẻ chứa các thẻ link, thẻ scripts... 
+                    *) Các element đa số yêu cầu thẻ đống mở trừ một số thẻ đặc biệt: img, input, hr, br,...
+                3: Làm quen với các element cụ thể
+                    - Hiển thị nội dung văn bản: thẻ p, thẻ text, thẻ span,...
+                    - Hiển thị tiêu đề: h1->h6, 
+                    - Hiển thị đường kẻ: hr 
+                    - thẻ xuống dòng: br 
+                    - thẻ danh sách: ul-li, ol-li,dl-dt, dd...
+                    - Định dạng văn bản: văn bản in đậm - thẻ b 
+                                        văn bản in nghiêng - thẻ i 
+                                        văn bản gạch chân - thẻ u 
+                    - thẻ hiển thị hình ảnh:
+                        + Tên element: img (không có thẻ đóng)
+                        + Một số thuộc tính quan trọng: 
+                                -src: địa chỉ hình ảnh cần được hiển thị
+                                -alt: hiển thị tên ảnh trong trường hợp không load đc ảnh
+                        
+                    - thẻ siêu liên kết:
+                        + tên element: a 
+                        + một số thuộc tính cần lưu ý:
+                                    -href: giá trị <=> url cần điều hướng
+                                    -title: ghi chú cho thẻ a 
+                                    -target: tạo tab mới hay giữ nguyên tab hiện tại 
+                    
+                4: Kết hợp các element để giải quyết bài toán
+                        kết hợp các element: danh sách, liên kết, nội dung/hình ảnh
+        </pre>
+
+        <hr>
+
+        <h1> BT1: Luyện tập sử dụng các element đầu tiên</h1>
+
+        <p>
+            <h2>Lorem Ipsum là gì?</h2>
+            <p>
+                <b>Giống như Thắng, Hùng</b> <i>đỗ nguyện vọng 2 vào ngành Kỹ thuật Máy tính, Đại học Bách khoa Hà Nội </i>. Năm nay, ngành này lấy điểm chuẩn 28,29.
+                <br> Dù trượt nguyện vọng 1 vào ngành yêu thích là cú sốc đầu đời với hai nam sinh, song, thủ khoa cho rằng, ngành học liên quan đến <u>nhóm ngành công nghệ thông tin</u>  đều có tương lai và vẫn là lĩnh vực đam mê của bản thân.
+            </p>
+
+            <hr>
+
+            <h2>Tại sao lại như vậy</h2>
+            <p>
+                Năm nay, Đại học Bách khoa Hà Nội nhận được tổng số nguyện vọng (gần 90.000) và số thí sinh (gần 34.500) tăng cao so với năm 2022.
+            </p>
+        </p>
+
+        <hr>
+        <h2>BT2:Luyện tập sử dụng thẻ danh sách</h2>
+        <h4>Ví dụ</h4>
+        <ol>
+            <li>Trang chủ</li>
+            <li>Sản Phẩm</li>
+            <li>Dịch vụ</li>
+            <li>Liên hệ</li>
+        </ol>
+
+        
+        <h4>Tự làm</h4>
+        <h5>Thẻ danh sách UL,LI</h5>
+        <ul type="square">
+            <li>Lập trình web với PHP</li>
+            <li>Học HTML cơ bản</li>
+            <li>Học css cơ bản</li>
+            <li>Học java</li>
+            <li>Thư viện Jquery</li>
+        </ul>
+        <h4>Thực hành với dl-dt-dd</h4>
+        <dl>
+            <dt>Mục I</dt>
+                <dd>Mục 1.1</dd>
+                <dd>Mục 1.2</dd>
+            <dt>Mục II</dt>
+                <dd>Mục 2.1</dd>
+                <dd>Mục 2.2</dd>
+        </dl>
+
+        <h4>Thẻ img</h4>
+        <img src="../images/anh.jpg" alt="anh">
+        <img src="data:image/jpeg;base64,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" alt="Báo mới">
+        
+        <h4>Thẻ a:</h4>
+        <a href="https://devmaster.edu.vn/" title="Devmaster" target="_blank">click để đi tới trang chủ devmaster</a>
+        
+        <h2>BT6:</h2>
+        <h3>Tin tức 24h:</h3>
+        <hr>
+        <p>
+            <b>Giống như Thắng, Hùng</b> <i>đỗ nguyện vọng 2 vào ngành Kỹ thuật Máy tính, Đại học Bách khoa Hà Nội </i>. Năm nay, ngành này lấy điểm chuẩn 28,29.
+            <br> Dù trượt nguyện vọng 1 vào ngành yêu thích là cú sốc đầu đời với hai nam sinh, song, thủ khoa cho rằng, ngành học liên quan đến <u>nhóm ngành công nghệ thông tin</u>  đều có tương lai và vẫn là lĩnh vực đam mê của bản thân.
+        </p>
+        <a href="https://devmaster.edu.vn/" title="đi tới trang devmaster" target="_blank">
+            <img src="../images/anh.jpg" alt="ảnh">
+        </a>
+        
+        <ul>
+            <li>
+                <a href="https://devmaster.edu.vn/" alt="ảnh 1" target="_blank">Trang chủ</a>
+            </li>
+            <li>
+                <a href="https://devmaster.edu.vn/Lap-trinh-ung-dung-voi-java-form-devmaster-javaform.html" alt="lập trình java" target="_blank">Lập trình Java</a>
+            </li>
+        </ul>
+    </body>
+</html>

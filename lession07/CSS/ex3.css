@@ -1,0 +1,82 @@
+/* header{
+    display:flex;
+    width: 800px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.685);
+    color:aliceblue;
+    border-radius: 5px;
+}
+div{
+    margin:15px 20px;
+    font-size: 20px;
+    border-right: 1px solid #cccccc2f;
+    padding-right: 20px;
+    
+}
+
+.SP{
+    color:greenyellow;
+} */
+
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+    color:aliceblue; 
+}
+
+.main-menu{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius:5px;
+    width:800px;
+
+}
+ 
+.option-menu{
+    padding:15px 25px;
+    font-size: 20px;
+    border-right: 1px solid #cccccc2f;
+}
+/* [color]{
+    color:greenyellow;
+} */
+
+/* khi hover vào li thì a đổi màu */
+.option-menu:hover a{
+    color:greenyellow;
+}
+
+.option-menu .option:hover{
+    color:red;
+}
+.main-menu .option-menu:last-child{
+    border-right: 0;
+}
+/* vị trí bất kì */
+.main-menu .option-menu:nth-child(5){
+    border-right: 0;
+}
+/* vị trí lẻ */
+.main-menu .option-menu:nth-child(2n+1){
+    border-right: 0;
+}
+/* con */
+.mega-menu {
+    position: absolute;
+    background-color: antiquewhite;
+    top:100%;
+    left:0;
+    display:none;
+    width:200px;
+}
+/* cha */  
+.option-menu{
+    position:relative;
+}
+/* không có dấu > có thể là con,cháu... 
+có > thì là con liền kề */
+.main-menu > .option-menu:hover .mega-menu{
+    display: block;
+}

@@ -1,0 +1,25 @@
+/* element */
+footer{
+    height:200px;
+    width: 100%;
+    background-color:cornflowerblue;
+}
+/* class */
+.header{ 
+    background-color: palevioletred;
+}
+/* id */
+#header{
+    background-color: chartreuse;
+}
+/* attr */
+[data-attr="header"]{
+    background-color: blue;
+}
+#header{
+    background-color: brown;
+}
+
+html .demo section{
+    color:blue;
+}

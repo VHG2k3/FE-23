@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+
+
+.menu-cap-1{
+    background-color: #ccc;
+    width: 100%;
+    display: flex;
+}
+
+.option{
+    padding:10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.option:hover{
+    background-color: bisque;
+}
+.option:hover .link{
+    color:greenyellow;
+}
+
+.menu-cap-2{
+    position:absolute;
+    top:100%;
+    left:50%;
+    background-color: gray;
+    width:150px;
+    display:none;
+}
+.menu-cap-1 .option:hover .menu-cap-2{
+    display: block;
+}
+.menu-cap-3{
+    position:absolute;
+    top:0%;
+    left:100%;
+    width:200px;
+    background-color: aquamarine;
+    display: none;
+}
+.list-option-2{
+    position:relative;
+}
+
+.menu-cap-2 .list-option-2:hover .menu-cap-3{
+    display: block;
+}
+
+/* .option:hover> .menu-cap-3{} *--cách này hay hơn này!!!*/
+
+.d-flex{
+    display: flex;
+    
+}
+
+.logo img{
+    width:200px;
+    height:60px;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* .product .img img{
+    width:300px;
+} */
+.strike{
+    text-decoration: line-through;
+}

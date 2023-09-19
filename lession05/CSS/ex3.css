@@ -1,0 +1,60 @@
+/* header{
+    display:flex;
+    width: 800px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.685);
+    color:aliceblue;
+    border-radius: 5px;
+}
+div{
+    margin:15px 20px;
+    font-size: 20px;
+    border-right: 1px solid #cccccc2f;
+    padding-right: 20px;
+    
+}
+
+.SP{
+    color:greenyellow;
+} */
+
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+    color:aliceblue; 
+}
+
+.main-menu{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius:5px;
+    width:800px;
+
+}
+ 
+li{
+    padding:15px 25px;
+    font-size: 20px;
+    border-right: 1px solid #cccccc2f;
+}
+/* [color]{
+    color:greenyellow;
+} */
+
+/* khi hover vào li thì a đổi màu */
+li:hover a{
+    color:greenyellow;
+}
+.main-menu li:last-child{
+    border-right: 0;
+}
+/* vị trí bất kì */
+.main-menu li:nth-child(5){
+    border-right: 0;
+}
+/* vị trí lẻ */
+.main-menu li:nth-child(2n+1){
+    border-right: 0;
+}
